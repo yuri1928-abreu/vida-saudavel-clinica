@@ -1,0 +1,190 @@
+/* RESET GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* CABEÇALHO */
+  .cabecalho {
+    background: linear-gradient(90deg, #1abc9c, #16a085);
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* HERO */
+  .hero {
+    background: #e0f7fa;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  /* SERVIÇOS */
+  .servicos-container, .equipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card-servico, .card-membro {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #ccc;
+    width: 280px;
+    text-align: center;
+  }
+  
+  /* ÍCONES DE SERVIÇOS */
+  .icon {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+  }
+  
+  .consulta {
+    background: radial-gradient(circle at 30% 30%, #0af, #08c);
+  }
+  
+  .exames {
+    background: radial-gradient(circle at 70% 70%, #fa0, #c80);
+  }
+  
+  .nutricao {
+    background: radial-gradient(circle at 50% 50%, #af0, #8c0);
+  }
+  
+  /* AVATARES VETORIAIS */
+  .avatar {
+    width: 100px;
+    height: 150px;
+    margin: 0 auto 10px;
+    position: relative;
+  }
+  
+  /* CABEÇA */
+  .avatar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: #fcd5b5;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset 0 0 0 2px #0001;
+  }
+  
+  /* OLHOS E BOCA */
+  .avatar::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background:
+      radial-gradient(circle at 25% 40%, black 4px, transparent 5px),
+      radial-gradient(circle at 75% 40%, black 4px, transparent 5px),
+      radial-gradient(circle at 50% 75%, #800 5px, transparent 6px);
+  }
+  
+  /* CORPO GERAL */
+  .humano::before {
+    z-index: 2;
+  }
+  .humano::after {
+    z-index: 3;
+  }
+  
+  .humano::after {
+    width: 100px;
+    height: 80px;
+    top: 70px;
+    border-radius: 10px;
+  }
+  
+  /* ESTILOS PERSONALIZADOS */
+  .medico::after {
+    background: linear-gradient(#fff 50%, #ccc 50%);
+    border: 2px solid #aaa;
+  }
+  .nutricionista::after {
+    background: linear-gradient(#7ed957 50%, #62b948 50%);
+    border: 2px solid #5cae3e;
+  }
+  .pediatra::after {
+    background: linear-gradient(#fbb03b 50%, #f7931e 50%);
+    border: 2px solid #e67e22;
+  }
+  
+  /* FORMULÁRIO */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .formulario input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .formulario button {
+    padding: 10px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .formulario button:hover {
+    background: #16a085;
+  }
+  
+  /* RODAPÉ */
+  .rodape {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
